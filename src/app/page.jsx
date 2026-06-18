@@ -27,6 +27,8 @@ import {
 } from '@/screens/MiscPages';
 import { AboutUs, Contact, Disclaimer, PrivacyPolicy, Terms } from '@/screens/TrustPages';
 import { EditorialPolicy, HtmlSitemap } from '@/screens/Morepages';
+import FAQ from '@/screens/FAQ';
+
 
 export default function App() {
   return (
@@ -64,6 +66,8 @@ export default function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/editorial-policy" element={<EditorialPolicy />} />
         <Route path="/sitemap" element={<HtmlSitemap />} />
+        <Route path="/faq" element={<FAQ />} />
+
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
