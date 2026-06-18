@@ -4,7 +4,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
 
-// Pages
+// screens
 import Home from '@/screens/Home';
 import Indicators from '@/screens/Indicators';
 import IndicatorDetail from '@/screens/IndicatorDetail';
@@ -14,7 +14,6 @@ import { Platforms, PlatformPage } from '@/screens/Platforms';
 import Compare from '@/screens/Compare';
 import AIFinder from '@/screens/AIFinder';
 import SubmitListing from '@/screens/SubmitListing';
-
 import {
   Strategies,
   StrategyPage,
@@ -26,6 +25,8 @@ import {
   BlogPost,
   NotFound,
 } from '@/screens/MiscPages';
+import { AboutUs, Contact, Disclaimer, PrivacyPolicy, Terms } from '@/screens/TrustPages';
+import { EditorialPolicy, HtmlSitemap } from '@/screens/MorePages';
 
 export default function App() {
   return (
@@ -56,11 +57,90 @@ export default function App() {
         <Route path="/submit" element={<SubmitListing />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/editorial-policy" element={<EditorialPolicy />} />
+        <Route path="/sitemap" element={<HtmlSitemap />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
 }
+
+
+
+
+
+
+
+
+
+// 'use client';
+
+// import React from 'react';
+// import { Routes, Route } from 'react-router-dom';
+// import Layout from '@/components/layout/Layout';
+
+// // Pages
+// import Home from '@/screens/Home';
+// import Indicators from '@/screens/Indicators';
+// import IndicatorDetail from '@/screens/IndicatorDetail';
+// import { Trending, NewArrivals, TopRated, FreeTools } from '@/screens/ListPages';
+// import { Categories, CategoryPage } from '@/screens/Categories';
+// import { Platforms, PlatformPage } from '@/screens/Platforms';
+// import Compare from '@/screens/Compare';
+// import AIFinder from '@/screens/AIFinder';
+// import SubmitListing from '@/screens/SubmitListing';
+
+// import {
+//   Strategies,
+//   StrategyPage,
+//   AssetPage,
+//   ListingTypePage,
+//   Signals,
+//   Brokers,
+//   Blog,
+//   BlogPost,
+//   NotFound,
+// } from '@/screens/MiscPages';
+
+// export default function App() {
+//   return (
+//     <Routes>
+//       {/* AI Finder — full screen, no layout */}
+//       <Route path="/ai-finder" element={<AIFinder />} />
+
+//       {/* All other routes — wrapped in Layout */}
+//       <Route element={<Layout />}>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/indicators" element={<Indicators />} />
+//         <Route path="/indicators/:slug" element={<IndicatorDetail />} />
+//         <Route path="/trending" element={<Trending />} />
+//         <Route path="/new" element={<NewArrivals />} />
+//         <Route path="/top-rated" element={<TopRated />} />
+//         <Route path="/free" element={<FreeTools />} />
+//         <Route path="/categories" element={<Categories />} />
+//         <Route path="/categories/:slug" element={<CategoryPage />} />
+//         <Route path="/platforms" element={<Platforms />} />
+//         <Route path="/platforms/:slug" element={<PlatformPage />} />
+//         <Route path="/strategies" element={<Strategies />} />
+//         <Route path="/strategies/:type" element={<StrategyPage />} />
+//         <Route path="/assets/:assetClass" element={<AssetPage />} />
+//         <Route path="/type/:listingType" element={<ListingTypePage />} />
+//         <Route path="/signals" element={<Signals />} />
+//         <Route path="/brokers" element={<Brokers />} />
+//         <Route path="/compare" element={<Compare />} />
+//         <Route path="/submit" element={<SubmitListing />} />
+//         <Route path="/blog" element={<Blog />} />
+//         <Route path="/blog/:slug" element={<BlogPost />} />
+//         <Route path="*" element={<NotFound />} />
+//       </Route>
+//     </Routes>
+//   );
+// }
 
 
 
