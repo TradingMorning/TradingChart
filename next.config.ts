@@ -1,12 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* Next.js ko root pages folder check karne se rokne ke liye */
-  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
+  /* Default standard setup - Yeh aapke page.jsx ko wapas active kar dega */
 };
 
 export default nextConfig;
-
 
 
 
