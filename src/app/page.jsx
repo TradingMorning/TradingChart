@@ -26,7 +26,7 @@ import {
   NotFound,
 } from '@/screens/MiscPages';
 import { AboutUs, Contact, Disclaimer, PrivacyPolicy, Terms } from '@/screens/TrustPages';
-import { EditorialPolicy, HtmlSitemap } from '@/screens/MorePages';
+import { EditorialPolicy, HtmlSitemap } from '@/screens/Morepages';
 
 export default function App() {
   return (
