@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* Prevent Next.js from checking or creating routes from your custom pages folder */
-  useFileSystemPublicRoutes: false,
+  /* Next.js ko root pages folder check karne se rokne ke liye */
+  pageExtensions: ['page.tsx', 'page.ts', 'page.jsx', 'page.js'],
 };
 
 export default nextConfig;
+
 
 
 
