@@ -5,15 +5,16 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from '@/components/layout/Layout';
 
 // Pages
-import Home from '@/pages/Home';
-import Indicators from '@/pages/Indicators';
-import IndicatorDetail from '@/pages/IndicatorDetail';
-import { Trending, NewArrivals, TopRated, FreeTools } from '@/pages/ListPages';
-import { Categories, CategoryPage } from '@/pages/Categories';
-import { Platforms, PlatformPage } from '@/pages/Platforms';
-import Compare from '@/pages/Compare';
-import AIFinder from '@/pages/AIFinder';
-import SubmitListing from '@/pages/SubmitListing';
+import Home from '@/screens/Home';
+import Indicators from '@/screens/Indicators';
+import IndicatorDetail from '@/screens/IndicatorDetail';
+import { Trending, NewArrivals, TopRated, FreeTools } from '@/screens/ListPages';
+import { Categories, CategoryPage } from '@/screens/Categories';
+import { Platforms, PlatformPage } from '@/screens/Platforms';
+import Compare from '@/screens/Compare';
+import AIFinder from '@/screens/AIFinder';
+import SubmitListing from '@/screens/SubmitListing';
+
 import {
   Strategies,
   StrategyPage,
@@ -24,7 +25,7 @@ import {
   Blog,
   BlogPost,
   NotFound,
-} from '@/pages/MiscPages';
+} from '@/screens/MiscPages';
 
 export default function App() {
   return (
